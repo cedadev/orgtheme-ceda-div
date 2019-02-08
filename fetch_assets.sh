@@ -13,15 +13,15 @@ APP="orgtheme_ceda_div"
 THEME="orgtheme"
 
 # copy the demo index file
-index=docs/flatly/index.html
-dest=demo/index.html
-if [ ! -e `dirname ${APP}/static/${THEME}/${dest}` ]; then
-	echo making `dirname ${APP}/static/${THEME}/${dest}`
-	mkdir -vp `dirname ${APP}/static/${THEME}/${dest}`
-else
-	echo `dirname $index`
-fi
-cp ${SRCDIR}/${index} $APP/static/${THEME}/${dest}
+#index=docs/spacelab/index.html
+#dest=demo/index.html
+#if [ ! -e `dirname ${APP}/static/${THEME}/${dest}` ]; then
+#	echo making `dirname ${APP}/static/${THEME}/${dest}`
+#	mkdir -vp `dirname ${APP}/static/${THEME}/${dest}`
+#else
+#	echo `dirname $index`
+#fi
+#cp ${SRCDIR}/${index} $APP/static/${THEME}/${dest}
 
 # copy the other assets
 for i in \
@@ -33,7 +33,7 @@ _vendor/jquery/dist/jquery.min.js \
 _vendor/jquery/dist/jquery.min.map \
 _vendor/bootstrap/dist/js/bootstrap.min.js \
 _vendor/bootstrap/dist/js/bootstrap.min.js.map \
-4/flatly/bootstrap.css 
+4/spacelab/bootstrap.css 
 do
 	if [ ! -e `dirname $i` ]; then
 		dir=`dirname $i`
