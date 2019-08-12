@@ -4,8 +4,8 @@
 # 1 argument: top level directory (containing Gruntfile.js) of Grunt installationo
 # Run this script in the top level directory of the theme (same as setup.py)
 
-# To run grunt, copy the _variables.scss to "dist/flatly" directory of bootswatch, then run
-# grunt swatch:flatly
+# To run grunt, copy the _variables.scss to "dist/spacelab" directory of bootswatch, then run
+# grunt swatch:spacelab
 # and collect the output using the script below
 
 SRCDIR=$1
@@ -13,7 +13,7 @@ APP="orgtheme_ceda_div"
 THEME="orgtheme"
 
 # copy the demo index file
-index=docs/flatly/index.html
+index=docs/spacelab/index.html
 dest=demo/index.html
 if [ ! -e `dirname ${APP}/static/${THEME}/${dest}` ]; then
 	echo making `dirname ${APP}/static/${THEME}/${dest}`
@@ -33,7 +33,7 @@ _vendor/jquery/dist/jquery.min.js \
 _vendor/jquery/dist/jquery.min.map \
 _vendor/bootstrap/dist/js/bootstrap.min.js \
 _vendor/bootstrap/dist/js/bootstrap.min.js.map \
-4/flatly/bootstrap.css 
+4/spacelab/bootstrap.css 
 do
 	if [ ! -e `dirname $i` ]; then
 		dir=`dirname $i`
